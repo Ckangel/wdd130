@@ -6,16 +6,16 @@ body {
 }
 
 :root {
-    --primary-color: #XXXXXX;
-    --secondary-color: #XXXXXX;
-    --accent1-color: #XXXXXX;
-    --accent2-color: #XXXXXX;
+    --primary-color: #D9C5B2;
+    --secondary-color: #701307;
+    --accent1-color: #af78af;
+    --accent2-color: #989898;
 
     --heading-font: '_____' , serif;
     --paragraph-font: '_____' , serif;
 
-    --nav-background-color: #XXXXXX;
-    --nav-link-color: #XXXXXX;
+    --nav-background-color: #750987;
+    --nav-link-color: #;
     --nav-hover-link-color: #XXXXXX;
     --nav-hover-background-color: #XXXXXX;
 }
