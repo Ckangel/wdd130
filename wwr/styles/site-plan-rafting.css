@@ -6,18 +6,18 @@ body {
 }
 
 :root {
-    --primary-color: #D9C5B2;
-    --secondary-color: #701307;
+    --primary-color: #748fd8;
+    --secondary-color: #597007;
     --accent1-color: #af78af;
     --accent2-color: #989898;
 
     --heading-font: '_____' , serif;
     --paragraph-font: '_____' , serif;
 
-    --nav-background-color: #750987;
-    --nav-link-color: #;
-    --nav-hover-link-color: #XXXXXX;
-    --nav-hover-background-color: #XXXXXX;
+    --nav-background-color: #4e27dd;
+    --nav-link-color: #4dd927;
+    --nav-hover-link-color: #3893c7;
+    --nav-hover-background-color: #1ebc84;
 }
 
 body {
