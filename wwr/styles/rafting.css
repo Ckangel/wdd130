@@ -95,11 +95,6 @@ footer {
     background: #333    
 }
 
-.socialinks img {
-    width: 40px;
-    height: 40px;
-}
-
 .social-media-icons {
     display: flex;
     justify-content: center;
