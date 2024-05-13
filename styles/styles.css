@@ -11,11 +11,12 @@ nav {
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 10px;
 }
 
 h1 {
     color: steelblue;
+    padding: .5rem
 }
 
 img {
@@ -28,14 +29,18 @@ img {
 }
 
 main img {
-    /* likely to have other declarations here */
+    width: 150px;
+    height: auto;
+    border: 1px;
+    padding: 2px;
+    box-shadow: 0 0 30 px #gray;
     float: right;
 }
 
 p { padding: 0;}
 
 main {
-    max-width: 840px;
+    max-width: 640px;
 }
 
 aside {
@@ -67,7 +72,7 @@ main img {
 }
 
 footer {
-    margin-top: 15px;
+    margin-top: 1em;
     border-top: 1px solid #000;
     text-align: center;
 }
