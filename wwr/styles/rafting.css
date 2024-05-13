@@ -56,6 +56,7 @@ nav a:hover {
     background: #ddd;
     padding: 2rem;
     text-align: center;
+    float: right;
 }
 
 .hero img {
