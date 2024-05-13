@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
 
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto', Arial, sans-serif:'Courier New';
+    line-height: 1.6;
+    color: #333
+    background-color: #f4f4f4;
+}    
+
 :root {
     --primary-color: #55868C;
     --secondary-color: #75485E;
@@ -15,37 +29,19 @@
     --nav-hover-background-color: #1ebc84;
 }
 
-body {
-    font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-header {
-    padding: 20px;
-    background-color: var(--accent1-color);
-}
-
-p {
-    padding: 25px;
-}
-
 nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 nav a {
     display: block;
-    color: var(--nav-link-color);
+    color: #fff;
     text-decoration: none;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
 }
 
 nav a:link, nav a:visited {
@@ -53,7 +49,52 @@ nav a:link, nav a:visited {
 }
 
 nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
+    background-color: #555
 }
 
+.hero {
+    background: #ddd;
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    margin-top: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+article {
+    margin-bottom: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.socialinks {
+    display: flex;
+    justify-content: center;
+    gap: 1 rem;
+    padding: 1rem 0;
+    background: #333    
+}
+
+.socialinks img {
+    width: 40px;
+    height: 40px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333
+    color: #fff
+}
