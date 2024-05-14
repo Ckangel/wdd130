@@ -15,21 +15,6 @@ body {
     background-color: #f4f4f4;
 }    
 
-:root {
-    --primary-color: #55868C;
-    --secondary-color: #75485E;
-    --accent1-color: #9CFC97;
-    --accent2-color: #F9E0D9;
-
-    --heading-font: '_____' , serif;
-    --paragraph-font: '_____' , serif;
-
-    --nav-background-color: #12393b;
-    --nav-link-color: #4dd927;
-    --nav-hover-link-color: #3893c7;
-    --nav-hover-background-color: #1ebc84;
-}
-
 nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
