@@ -57,11 +57,9 @@ aside {
 
 aside h2 {
     position: absolute;
-    top: 95%; /* To center vertically */
-    left: 55% /* Center horizontally */
-    transform; translate:(-50%, -50%); /* adjust positioning based on element size */
+    translate:(-50%, -50%); /* adjust positioning based on element size */
     text-align: center;
-    color: steelblue;
+    color: rgb(1, 31, 54);
 }
 
 .box {
