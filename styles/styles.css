@@ -57,6 +57,8 @@ aside {
 
 aside h2 {
     position: absolute;
+    top: 2cqb;
+    left: 60px;
     translate:(-50%, -50%); /* adjust positioning based on element size */
     text-align: center;
     color: rgb(1, 31, 54);
