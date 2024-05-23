@@ -1,4 +1,4 @@
-* {
+** {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -47,7 +47,7 @@ main {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgba(0, 0, 0. 0.2); /* 1 */;
+    border: 1px solid rgba(0, 0, 0.2); /* 1 */
     padding: 1rem;
     background-color: #eee;
     color: #333;
@@ -58,18 +58,28 @@ aside img {
     width: 200px;
     height: auto;
     text-align: center;
+    box-sizing: border-box;
 }
 
 aside h2 {
     position: absolute;
-    top: 615px;
-    left: 70px;
+    top: 715px;
+    left: 115px;
     text-align: center;
+    text-color: #1f0442;
+}
 
-main img {
+.box {
+    margin: 1rem;
+    border: 1px solidrgba(0,0,0,.1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+  }
+
+  main img {
     width: 150px;
     height: auto;
-    ...
 }
 
 footer {
