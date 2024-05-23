@@ -34,7 +34,7 @@ main img {
     height: auto;
     border: 1px;
     padding: 2px;
-    box-shadow: 0 0 30 px #gray;
+    box-shadow: 0 0 30 px gray;
     float: right;
 }
 
@@ -47,26 +47,21 @@ main {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgba(0, 0, 0.2); /* 1 */
+    border: 1px solid rgba(0, 0, 0.2);
     padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
-}
-
-aside img {
-    width: 200px;
-    height: auto;
-    text-align: center;
-    box-sizing: border-box;
+    position: relative;
 }
 
 aside h2 {
     position: absolute;
-    top: 715px;
-    left: 115px;
+    top: 95%; /* To center vertically */
+    left: 55% /* Center horizontally */
+    transform; translate:(-50%, -50%); /* adjust positioning based on element size */
     text-align: center;
-    text-color: #1f0442;
+    color: steelblue;
 }
 
 .box {
@@ -95,4 +90,5 @@ footer {
     padding: 1rem;
     background-color: rgb(131, 186, 231);
     color: slategrey
+    
 }
