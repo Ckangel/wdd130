@@ -17,7 +17,6 @@ header, footer, .grid {
 .grid {
     display: grid;
     align-items: center;
-    grid-column: 2;
     grid-row: 1;
 }
 
@@ -56,28 +55,19 @@ h1 {
     padding: .5rem
 }
 
-img {
-    width: 150px;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-    float: left;
-}
-
 main img {
     width: 150px;
     height: auto;
     border: 1px;
-    padding: 2px;
-    box-shadow: 0 0 30 px gray;
+    padding: .4px;
+    box-shadow: 0 0 30px gray;
     float: right;
 }
 
 p { 
     padding: 0;
     text-decoration-color: rgb(14, 14, 2);
-    text-emphasis-color: violet;
+    text-emphasis-color: rgb(73, 33, 73);
     color: hsl(0, 82%, 2%);
 }
     
@@ -94,14 +84,13 @@ aside {
     width: 20rem;
     position: relative;
     grid-column: 1/2;
-    grid-row: 1/2;
+    grid-row: 1;
 }
 
 aside h2 {
     position: absolute;
-    top: 0%;
+    top: 0px;
     left: 50px;
-    translate:(-50%, -50%); /* adjust positioning based on element size */
     text-align: center;
     color: rgb(1, 31, 54);
 }
@@ -112,11 +101,6 @@ aside h2 {
     padding: 1rem;
     background-color: #f7d1d1;
     color: #ddd;
-}
-
-  main img {
-    width: 150px;
-    height: auto;
 }
 
 footer {
