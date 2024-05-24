@@ -2,12 +2,12 @@
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 20px;
+    padding: 30px;
     background-color: #f4f4f4;
   }
   
   .quiz-table {
-    width: 100%;
+    width: 50%;
     margin: 20px 0;
     border-collapse: collapse;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -40,7 +40,7 @@
   input[type="text"],
   textarea,
   select {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin-top: 5px;
     border-radius: 5px;

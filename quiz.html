@@ -1,13 +1,3 @@
-
-<!---A text type input. (fill in the blank question)
-Assign both the name and id attribute values as "q1".
-A textarea element. (short answer question)
-Assign both the name and id attribute values as "q2".
-A select element. (dropdown or combo box)
-Assign both the name and id attribute values as "q3".
-The select element should have at least three (3) options with values.
---->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,15 +61,15 @@ The select element should have at least three (3) options with values.
       </td>
     </tr>
   </table>
-  <button type="button"="submitQuiz()">Submit Test</button>
-    id="submitBtn">Submit Test</button>
+  <button type="button"
+  id="submitBtn">Submit Test</button>
+  <script>
+    document.getElementById("submitBtn").adEventListener("Click", submitQuiz);
+  </script>
 </form>
 
 <div id="result" class="result"></div>
 
-<script>
-// JavaScript code for evaluating answers goes here (same as previous example)
-</script>
 
 </body>
 </html>
