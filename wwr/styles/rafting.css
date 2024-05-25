@@ -66,6 +66,8 @@ article {
 
 section {
     margin-bottom: 2rem;
+    position: center;
+    display: flexbox
 }
 
 footer {
