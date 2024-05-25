@@ -10,7 +10,6 @@ header, footer, .grid {
     border-top: 1px solid #000;
     text-align: center;
 }
-}
 
 .grid {
     display: grid;
