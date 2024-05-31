@@ -8,75 +8,101 @@
     <!-- Link to custom CSS file --> 
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
-<body> 
-    <!-- Header section --> 
-    <header> <!-- Logo for WWR --> 
-        <img src="images/logo.png" alt="Whitewater Rafting Company"> 
-        <!-- Navigation menu --> 
-        <nav> <a href="index.html">Home</a> 
-            <a href="about.html">About</a> 
-            <a href="trips.html">Trips</a> 
-            <a href="contact.html">Contact</a> 
-        </nav> 
+<body>
+    <header>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About Us</a>
+            <a href="/trips.html">Trips</a>
+            <a href="/contact.html">Contact Us</a>
+        </nav>
     </header>
-    <!-- Main content --> 
-    <main> <!-- Hero section --> 
-        <div class="hero"> 
-            <!-- Background image --> 
-            <img src="images/rafting_backround.jpg" alt="Rafting Adventure"> 
-            <!-- Main heading --> 
-            <h1 class="rivers">White-Water Rafting</h1> 
-            <!-- Article section --> 
-            <article> <!-- Image of a happy client --> 
-                <img src="images/getty_happy_customer.jpg" alt="Satisfied Customer"> 
-                <!-- Introduction paragraph --> 
-                <p>We are poised to give you an adrenaline filled adventure on the rivers so pristine and clear.  
-                    These are once in a lifetime memory and fun that will compel you to come another time soon, 
-                    with your family and loved ones.  We assure you of security, safety and a  second to none exposure
-                    to love mother nature!</p> 
-                </article> 
+    <main>
+        <section class="company-info">
+            <h2>Company Information</h2>
+            <p>123 River Road, Adventure Town, RA 54321</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Email: info@raftingadventures.com</p>
+            
+            <!-- Embed Google Map -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10357.976899357258!2d-118.28494114492446!3d34.02974839999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDE2JzU0LjMiTiAxMTjCsDA1JzI3LjYiVw!5e0!3m2!1sen!2sus!4v1621966678870!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-            <!-- History section --> 
-            <section> 
-                <!-- Subheading --> 
-                <h2>History</h2> 
-                <!-- Paragraph describing the company's history --> 
-                <p>Our experience dates back to the very beginnings of river rafting in 1843 when Lieutenant John Fremont 
-                    introduced the first rubber raft in USA, and that marked the beginning of 
-                    WWR which has pioneered this adventurous river and water sport till today. 
-                    Walter Helkett is also part of our successes.  They conceived the idea and
-                    brought into fruition to be the very first river rafting company in America.</p> 
-            </section>
-                    <h2>Adventure Awaits You!</h2> 
-                    <!-- Adventure section -->
-                    <section class="adventures"> 
-                        <!-- Subheading --> 
-                        <!-- Images showcasing white water rafting adventures with captions --> 
-                        <figure > <img class="rafting" src="images/rafting7_600.jpg" alt="Rafting Adventure"> 
-                            <figcaption>White Water Rafting Excitement</figcaption> 
-                        </figure> 
-                        <figure > <img class="rafting" src="images/rafting13_1024.jpg" alt="WWR Adventure Picture 1" width="400"> 
-                            <figcaption>Breathtaking Moments Ahead</figcaption> </figure> 
-                        <figure> <img class="rafting" src="images/rafting39_1024.jpg" alt="WWR Adventure Picture 2" width="400"> 
-                            <figcaption>Aquarian Adeventure with the Rapids</figcaption> 
-                        </figure> 
-                        <figure> <img class="rafting" src="images/rafting53_600.jpg" alt="WWR Adventure Picture 3" width="400">
-                            <figcaption>Emphasis on Synergy and Teamwork</figcaption> </figure> 
-                        <figure > <img class="rafting" src="images/rafting8_600.jpg" alt="WWR Adventure Picture 4" width="400">
-                            <figcaption>Supercharged Adrenaline Experience</figcaption> </figure>
-                    </section>
+        </section>
+        <section class="employee-profiles">
+            <div class="employee">
+                <img src="wwr/images/employee1.jpg" alt="Employee 1">
+                <figcaption>
+                    <h3>John Doe</h3>
+                    <p>Rafting Guide</p>
+                    <p>Experience: 5 years</p>
+                </figcaption>
+            </div>
+            <div class="employee">
+                <img src="wwwr/images/employee2.jpg" alt="Employee 2">
+                <figcaption>
+                    <h3>Jane Smith</h3>
+                    <p>Adventure Specialist</p>
+                    <p>Experience: 3 years</p>
+                </figcaption>
+            </div>
+            <div class="employee">
+                <img src="wwr/images/employee3.jpg" alt="Employee 3">
+                <figcaption>
+                    <h3>Mike Johnson</h3>
+                    <p>River Expert</p>
+                    <p>Experience: 7 years</p>
+                </figcaption>
+            </div>
+        </section>
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="purpose">Purpose of Message:</label>
+                <select id="purpose" name="purpose">
+                    <option value="inquiry">General Inquiry</option>
+                    <option value="reservation">Reservation Question</option>
+                    <option value="suggestion">Website Suggestion</option>
+                </select>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label>
+                    <input type="checkbox" name="newsletter" value="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <img src="images/office-space.jpg" alt="Office Image" class="office-image">
     </main>
-<!-- Footer section --> 
-<footer> 
-    <!-- Copyright and contact information --> 
-    <p>&copy; 2024 Whitewater Rafting. Created by <a href="charlesceekay.com" target="_blank">Charles Kingsley Ajeigbe</a></p> 
-    <!-- Social media links --> 
-    <nav class="sociallinks"> 
-        <a href="https://facebook.com"> <img src="images/Logo_facebook-1.webp" alt="Facebook"> 
-        </a> <a href="https://twitter.com"> <img src="images/twitter2.webp" alt="Twitter"> 
-        </a> <a href="https://instagram.com"> <img src="images/instagram2.webp" alt="Instagram"> 
-        </a> 
-    </nav> 
-</footer>
+    <footer>
+        <p>&copy; <span id="current-year"></span> Whitewater Rafting Company</p>
+        <a href="#" class="contact-wireframe">contact page wireframe</a>
+        <nav class="social-links">
+            <a href="https://facebook.com" target="_blank" class="social-link">
+                <img src="images/facebook-icon.svg" alt="Facebook Icon">
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-link">
+                <img src="images/twitter-icon.svg" alt="Twitter Icon">
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-link">
+                <img src="images/instagram-icon.svg" alt="Instagram Icon">
+            </a>
+        </nav>
+    </footer>
+    <script>
+        // Get current year
+        const currentYear = new Date().getFullYear();
+        document.getElementById("current-year").textContent = currentYear;
+    </script>
 </body>
 </html>

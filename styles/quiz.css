@@ -1,71 +1,83 @@
-.body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 30px;
-    background-color: #f4f4f4;
-  }
-  
-  .quiz-table {
-    width: 50%;
-    margin: 20px 0;
-    border-collapse: collapse;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .quiz-table th, .quiz-table td {
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-    text-align: left;
-  }
-  
-  .quiz-table th {
-    background-color: #5995fd;
-    color: #ffffff;
-    font-weight: bold;
-  }
-  
-  .quiz-table .question-row {
-    background-color: #e7f3fe;
-  }
-  
-  .quiz-table .answer-row td {
-    background-color: #fff;
-  }
-  
-  .quiz-table tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  input[type="text"],
-  textarea,
-  select {
-    width: 90%;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-  }
-  
-  input[type="submit"],
-  button {
-    background-color: #5995fd;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover,
-  button:hover {
-    background-color: #4666f5;
-  }
-  
-  .result {
-    padding: 20px;
-    background-color: #e2e2e2;
-    border-radius: 5px;
-    margin-top: 20px;
-  }
+/* Basic reset to remove default browser styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure that padding and borders are included in the element's total width and height */
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif; /* Set the font for the entire document */
+  background-color: #f4f4f4; /* Light gray background color */
+  color: #333; /* Dark gray text color */
+  display: flex; /* Use flexbox layout */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  height: 100vh; /* Full viewport height */
+  padding: 20px; /* Padding around the body */
+  flex-direction: column; /* Stack items vertically */
+}
+
+/* Heading styling */
+h1 {
+  margin-bottom: 20px; /* Space below the heading */
+  text-align: center; /* Center-align the text */
+}
+
+/* Form styling */
+form {
+  background: #fff; /* White background color */
+  padding: 20px; /* Padding inside the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 600px; /* Maximum width of the form */
+  width: 100%; /* Full width of the parent container */
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 15px; /* Space below each form group */
+}
+
+/* Label styling */
+label {
+  display: block; /* Make the label a block element */
+  margin-bottom: 5px; /* Space below the label */
+  font-weight: bold; /* Bold text */
+}
+
+/* Input, textarea, select styling */
+input[type="text"],
+textarea,
+select,
+input[type="number"] {
+  width: 100%; /* Full width of the parent container */
+  padding: 10px; /* Padding inside the element */
+  margin-top: 5px; /* Space above the element */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Submit button styling */
+button[type="submit"] {
+  display: inline-block; /* Display as an inline block element */
+  padding: 10px 20px; /* Padding inside the button */
+  font-size: 16px; /* Font size */
+  color: #fff; /* White text color */
+  background-color: #007BFF; /* Blue background color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin: 0 auto; /* Center the button */
+}
+
+/* Flex container for centering the submit button */
+.form-group.button-group {
+  display: flex; /* Use flexbox layout */
+  justify-content: center; /* Center items horizontally */
+}
+
+/* Submit button hover effect */
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue background on hover */
+}
