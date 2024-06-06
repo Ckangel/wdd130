@@ -12,7 +12,6 @@
 <body>
     <header>
         <nav>
-            <!-- The Folder path for navigation links -->
             <a href="/index.html">Home</a>
             <a href="/about.html">About Us</a>
             <a href="/trips.html">Trips</a>
@@ -20,66 +19,70 @@
         </nav>
     </header>
     <main>
-        <!-- Placing the image logo -->
-        <div class="hero">
-        <img src="images/logo.png" alt="Whitewater Rafting Company">
-        <h1>Whitewater Rafting Company</h1>
+        <section class="hero">
+            <img src="images/logo.png" alt="Whitewater Rafting Company">
+            <h1>Whitewater Rafting Company</h1>
             <article>
                 <h2>Whitewater Rafting</h2>
-                <!-- Placeholder for image source and alt text -->
                 <img src="images/hero_rafting48_1024.jpg" alt="Classic scenic">
                 <p>Rafting and whitewater rafting are outdoor entertainment activities that use a boat or an unsinkable raft.</p> 
                 <p>It has different difficulty levels according to the current of the water in which the sport is done.</p>
                 <p>It can be done solo but is more commonly done with groups and needs good teamwork to manage the water.</p>
             </article>
-        </div>
-        <section>
-            <h2>History</h2>
-            <!-- Content for the history section -->
-            <p>In 1843 lieutenant John Fremont introduced the first rubber raft in US. 
-                Later on in 1844 the further enhancements were made by Peter Halkett.</p> 
-            <p>These vessels greatly facilitated whitewater navigation. 
-                It lasted for many years, with improvements in craftsmanship and safety over time.</p>
         </section>
-        <section>
+        
+        <section class="history">
+            <h2>History</h2>
+            <p>In 1843, Lieutenant John Fremont introduced the first rubber raft in the US. Later on, in 1844, further enhancements were made by Peter Halkett.</p> 
+            <p>These vessels greatly facilitated whitewater navigation and lasted for many years, with improvements in craftsmanship and safety over time.</p>
+        </section>
+        
+        <section class="adventures">
             <h2>Adventure Awaits You!</h2> 
-            <!-- Adventure section -->
-            <section class="adventures"> 
-            <!-- Images showcasing white water rafting adventures with captions --> 
-            <figure > <img class="rafting" src="images/rafting7_600.jpg" alt="Rafting Adventure"> 
-                <figcaption>White Water Rafting Excitement</figcaption> 
-            </figure> 
-            <figure > <img class="rafting" src="images/rafting13_1024.jpg" alt="WWR Adventure Picture 1" width="400"> 
-                <figcaption>Breathtaking Moments Ahead</figcaption> </figure> 
-            <figure> <img class="rafting" src="images/rafting39_1024.jpg" alt="WWR Adventure Picture 2" width="400"> 
-                <figcaption>Aquarian Adeventure with the Rapids</figcaption> 
-            </figure> 
-            <figure> <img class="rafting" src="images/rafting53_600.jpg" alt="WWR Adventure Picture 3" width="400">
-                <figcaption>Emphasis on Synergy and Teamwork</figcaption> </figure> 
-            <figure > <img class="rafting" src="images/rafting8_600.jpg" alt="WWR Adventure Picture 4" width="400">
-                <figcaption>Supercharged Adrenaline Experience</figcaption> </figure>
-        </section>  
-        <br> <!--- Break line to add space -->
+                <div class="adventure-images">
+                    <figure>
+                        <img src="images/rafting7_600.jpg" alt="Rafting Adventure"> 
+                        <figcaption>White Water Rafting Excitement</figcaption> 
+                    </figure> 
+                    <figure>
+                        <img src="images/rafting13_1024.jpg" alt="WWR Adventure Picture 1">
+                        <figcaption>Breathtaking Moments Ahead</figcaption>
+                    </figure> 
+                    <figure>
+                        <img src="images/rafting39_1024.jpg" alt="WWR Adventure Picture 2">
+                        <figcaption>Aquarian Adventure with the Rapids</figcaption> 
+                    </figure> 
+                    <figure>
+                        <img src="images/rafting53_600.jpg" alt="WWR Adventure Picture 3">
+                        <figcaption>Emphasis on Synergy and Teamwork</figcaption>
+                    </figure> 
+                    <figure>
+                        <img src="images/rafting8_600.jpg" alt="WWR Adventure Picture 4">
+                        <figcaption>Supercharged Adrenaline Experience</figcaption>
+                    </figure>
+                </div>
+        </section>
     </main>
+    
     <footer>
         <p>&copy; <span id="demo"></span> White Water Rafting</p>
         <a href="#open-modal" class="footer-menu">Wireframe</a>
         <nav class="sociallinks">
             <a href="https://facebook.com" target="_blank">
-                <img src="images/facegook.svg" alt="Facebook icon">
+                <img src="images/facebook.svg" alt="Facebook icon">
             </a>
             <a href="https://twitter.com" target="_blank">
-                <img src="images/x-twiiter.svg" alt="X icon">
+                <img src="images/twitter.svg" alt="Twitter icon">
             </a>
             <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.svg" alt="Instagram Icon">
+                <img src="images/instagram.svg" alt="Instagram icon">
             </a>
         </nav>
     </footer>
+    
     <script>
         const date = new Date(document.lastModified);
         document.getElementById("demo").innerHTML = date.getFullYear();
     </script>
-
 </body>
 </html>
