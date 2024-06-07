@@ -83,20 +83,19 @@
             outdoors in every individual. We are committed to providing high-quality services, prioritizing safety, and
             promoting sustainable tourism practices that protect and preserve the rivers we cherish..</p>
     </section>
-
         
     <div class="gallery">
       <div class="column">
-        <img src="images/premium.jpg" alt="Image 1">
-        <div class="caption">Thrilling Adventure</div>
+        <img src="images/rafting8_600.jpg" alt="Image 1" width="250">
+        <div class="caption"><h2>Adventure Heights</h2></div>
       </div>
       <div class="column">
-        <img src="images/teamwork.avif" alt="Image 2">
-        <div class="caption">United Teamwork</div>
+        <img src="images/teamwork.avif" alt="Image 2" width="250" height="250">
+        <div class="caption"><h2>Terrific Teamwork</h2></div>
       </div>
       <div class="column">
-        <img src="images/progressive.webp" alt="Image 3">
-        <div class="caption">Savoury Success</div>
+        <img src="images/progressive.webp" alt="Image 3" width="250">
+        <div class="caption"><h2>Savoury Success</h2></div>
       </div>
     </div>
 
@@ -105,19 +104,17 @@
         <!--Hero section-->
         <div class="Hero">
             <!--Background image-->
-            <img src="images/background.jpg" alt="Exhilarating Memories">
+            <img src="images/blue-nature-trunk.avif" alt="Exhilarating Memories">
             <!--Main Heading-->
-            <h1 class="oceans">White-Water Rafting</h1>
+            <h2 class="oceans">White-Water Rafting</h2>
 
 
     <!-- Services Section -->
     <h2>Our Services</h2>
-
-    <section id="services">
         <p>Details about the services offered.</p>
-        <section class="our-services">
+       
             <div class="services">
-                <img src="images/service1.jpg" alt="Service 1">
+                <img src="images/service1.jpg" alt="Service 1" width="200">
                 <figcaption>
                     <h3>Bookings</h3>
                     <p>Groups of 4 and above</p>
@@ -129,8 +126,9 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </figcaption>
+                <br>
         <div class="services">
-            <img src="images/service2.jpg" alt="Service 2">
+            <img src="images/service2.jpg" alt="Service 2" width="200">
             <figcaption>
                 <h3>Vacationing</h3>
                 <p>Breakfast and Bed</p>
@@ -142,9 +140,10 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </figcaption>
+            <br>
         </div>
         <div class="services">
-            <img src="images/service3.jpg" alt="Service 3">
+            <img src="images/service3.jpg" alt="Service 3" width="200">
             <figcaption>
                 <h3>Sport Competitions</h3>
                 <p>Teams of over 4</p>
@@ -158,8 +157,7 @@
             </figcaption>
         </div>
             </div>
-    </section>
-    </section>
+
         </div>
 </main>
 
@@ -175,22 +173,24 @@
 </aside>
        <img src="images/office-space.jpg" alt="Office Image" class="office-image">
 
-       <footer id="footer">
-        <div class="container">
-                <div class="row">
-                 <div class="col-sm-3">
-                    <p>&copy; 2024 <a target="_blank" href="/" title="Whitewater Rafting">Whitewater Rafting</a>. <br class="visible-xs">All Rights Reserved.</p>
-                  </div>
-                 <div class="col-sm-3">
-                     <ul class="pull-right">
-                         <li><a aria-label="Follow Us on Facebook" target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x"></i></a></li>
-                         <li><a aria-label="Follow Us on X" target="_blank" href="https://twitter.com/#!/"><i class="fa fa-twitter fa-2x"></i></a></li>
-                         <li><a aria-label="Follow Us on Instagram" target="_blank" href="https://instagram.com//"><i class="fa fa-instagram fa-2x"></i></a></li>
-                         
-    
-                      </ul>
-                  </div>
-             </div>
-        </div>
-      </footer>
-    </html>
+       <footer>
+        <p>&copy; <span id="current-year"></span> Whitewater Rafting Company</p>
+        <a href="#" class="contact-wireframe">contact page wireframe</a>
+        <nav class="social-links">
+            <a href="https://facebook.com" target="_blank" class="social-link">
+                <img src="images/facebook-icon.svg" alt="Facebook Icon">
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-link">
+                <img src="images/twitter-icon.svg" alt="Twitter Icon">
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-link">
+                <img src="images/instagram-icon.svg" alt="Instagram Icon">
+            </a>
+        </nav>
+    </footer>
+    <script>
+        // Get current year
+        const currentYear = new Date().getFullYear();
+        document.getElementById("current-year").textContent = currentYear;
+    </script>
+</html>

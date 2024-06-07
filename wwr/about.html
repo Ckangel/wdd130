@@ -73,22 +73,24 @@
     </main>
 </body>
     
-<footer id="footer">
-    <div class="container">
-            <div class="row">
-             <div class="col-sm-3">
-                <p>&copy; 2024 <a target="_blank" href="/" title="Whitewater Rafting">Whitewater Rafting</a>. <br class="visible-xs">All Rights Reserved.</p>
-              </div>
-             <div class="col-sm-3">
-                 <ul class="pull-right">
-                     <li><a aria-label="Follow Us on Facebook" target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x"></i></a></li>
-                     <li><a aria-label="Follow Us on X" target="_blank" href="https://twitter.com/#!/"><i class="fa fa-twitter fa-2x"></i></a></li>
-                     <li><a aria-label="Follow Us on Instagram" target="_blank" href="https://instagram.com//"><i class="fa fa-instagram fa-2x"></i></a></li>
-                     
-
-                  </ul>
-              </div>
-         </div>
-    </div>
-  </footer>
+<footer>
+    <p>&copy; <span id="current-year"></span> Whitewater Rafting Company</p>
+    <a href="#" class="contact-wireframe">contact page wireframe</a>
+    <nav class="social-links">
+        <a href="https://facebook.com" target="_blank" class="social-link">
+            <img src="images/facebook-icon.svg" alt="Facebook Icon">
+        </a>
+        <a href="https://twitter.com" target="_blank" class="social-link">
+            <img src="images/twitter-icon.svg" alt="Twitter Icon">
+        </a>
+        <a href="https://instagram.com" target="_blank" class="social-link">
+            <img src="images/instagram-icon.svg" alt="Instagram Icon">
+        </a>
+    </nav>
+</footer>
+<script>
+    // Get current year
+    const currentYear = new Date().getFullYear();
+    document.getElementById("current-year").textContent = currentYear;
+</script>
 </html>
