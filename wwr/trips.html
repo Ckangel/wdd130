@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en-US">
-<head> <!-- Meta information --> 
+<!-- Meta information --> 
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Trips - White-Water Rafting</title> 
@@ -8,27 +8,39 @@
 
     <!-- Link to custom CSS file --> 
     <link rel="stylesheet" href="styles/rafting.css">
-</head>
     <header>
+    <!--Header section-->
+        <div class="header-container">
+            <!--WWR Logo-->
+            <img class="wwr-logo" src="images/logo.png" alt="WWR Site Logo" width="100">
+        </div>
+        <!-- Home Section -->
+<section id="home">
+    <h1>Welcome to Trips section</h1>
+    <p>At White-Water Rafting , we pride ourselves in providing you all
+        the support and gear that guarantee your safety, enjoyment and to
+        crown it all, moments that take your breath away! You are in good
+        hands when you are with us!</p>
         <nav>
-            <a href="/wwr\index.html">Home</a>
-            <a href="/wwr\about.html">About Us</a>
-            <a href="/wwr\trips.html">Trips</a>
-            <a href="/wwr\contact.html">Contact Us</a>
+            <a href="/wwr/index.html">Home</a>
+            <a href="/wwr/about.html">About Us</a>
+            <a href="/wwr/trips.html">Trips</a>
+            <a href="/wwr/contact.html">Contact Us</a>
         </nav>
     </header>
     <main>
         <title>WWR Rafting Trips</title>
 <link rel="stylesheet" href="styles.css">
 <body>
-<h1>"WWR Trips"</h1>
+<h1>"WWR Rafting Trips"</h1>
 <!-- Trips Page Container -->
+
 <div class="trips-container">
 
     <!-- Hero Section with CTA -->
     <section class="hero-section">
         <img src="images/hero_rafting48_1024.jpg" alt="Rafting Adventure" class="hero-image">
-        <h1>Embark on a Thrilling Rafting Journey</h1>
+        <h2>Embark on a Thrilling Rafting Journey</h2>
         <p>Join us for an unforgettable experience on the rapids!</p>
         <br>
         <a href="/wwr\contact.html" class="cta-button">Book Your Adventure</a>
@@ -68,68 +80,95 @@
     </section>
 
     <!-- Side Attractions and Activities -->
-    <section class="side-attractions">
-        <h2>More Than Just Rafting</h2>
+    <section class="side_attractions">
+    <h2>Rafting Exclusives</h2>
         <p>Discover side attractions and activities to make your trip even more memorable.</p>
-        <!-- List attractions here -->
-    </section>
-
     <!-- Customizable Options -->
     <section class="custom-options">
         <h2>Customize Your Trip</h2>
         <p>Choose from a variety of options to tailor your adventure to your preferences.</p>
         <!-- List customizable items here -->
-    </section> 
-        <section class="contact-form">
-            <h2>Contact Us</h2>
-            <form action="#" method="post">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
+ <!-- Main content -->
+ < class="trips-page-grid">
+    <!-- Call to Action -->
+    <section class="cta">
+        <h1>Join Us For Your Next Thrilling Adventure!</h1>
+        <p>Contact us for more information and to book your trip.</p>
+        <a class="cta-button" href="/wwr\contact.html">Contact Us</a>
+    </section>
 
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
+    <!-- Trip Descriptions -->
+            <article class="trip">
+            <img src="images/trip3.jpeg" alt="Trip 1">
+            <h2>Breathtaking Scenic Drifts</h2>
+            <p>Enjoy some peace and tranquility as a form of healing therapy from he hustles and bustles of city life. Truly relaxing!</p>
+        </article>
+        <article class="trip">
+            <img src="images/trip2.jpeg" alt="Trip 2">
+            <h2>Bounty Boom-Boom Shoosh</h2>
+            <p>Classy less strenous drfit through the calmer and glassy crystal water flows.</p>
+        </article>
+        <article class="trip">
+            <img src="images/trip1.jpeg" alt="">
+            <h2>Forty-8 Expedition</h2>
+            <p>Spend some time with us as we spoil you with not only te sports but the lovely cuisine and cosy boardings</p>
+        </article>
 
-                <label for="purpose">Purpose of Message:</label>
-                <select id="purpose" name="purpose">
-                    <option value="inquiry">General Inquiry</option>
-                    <option value="reservation">Reservation Question</option>
-                    <option value="suggestion">Website Suggestion</option>
-                </select>
-
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <label>
-                    <input type="checkbox" name="newsletter" value="subscribe">
-                    Please subscribe me to the monthly newsletter
-                </label>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-        <img src="images/office-space.jpg" alt="Office Image" class="office-image">
-</div>
+    <!-- Available Trip Table -->
+    <section class="trip-table">
+        <h2>Available Trips</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Duration of Time</th>
+                    <th>Level of Strain</th>
+                    <th>Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Breathtaking Scenic Drifts</td>
+                    <td>3 Hours</td>
+                    <td>High</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Bounty Boom-Boom Shoosh</td>
+                    <td>2 Hours</td>
+                    <td>Low</td>
+                    <td>$80</td>
+                </tr>
+                <tr>
+                    <td>Forty-8 Hours</td>
+                    <td>2 Days</td>
+                    <td>Medium</td>
+                    <td>$200</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+<!-- Footer section -->
+<footer>
+     
+    <!-- Copyright and author information -->
+    <p>@ 2024. Created by <a href=" target="_blank">Charles Kingsley Ajeigbe</a></p>
+    <!--Link to wireframe-->
+    <p><a href="images/wireframe_website_trips.avif" target="_blank">View Trips Page Wireframe</a></p>
+    <!-- Social media links -->
+    <nav class="sociallinks">
+        <a href="https://facebook.com">
+            <img src="images/Logo_facebook-1.webp" alt="Facebook">
+        </a>
+        <a href="https://twitter.com">
+            <img src="images/twitter2.webp" alt="Twitter">
+        </a>
+        <a href="https://instagram.com">
+            <img src="images/instagram2.webp" alt="Instagram">
+        </a>
+    </nav>
+   
+</footer>
 </body>
-    </main>
-    <footer id="footer">
-        <div class="container">
-                <div class="row">
-                 <div class="col-sm-3">
-                    <p>&copy; 2024 <a target="_blank" href="/" title="Whitewater Rafting">Whitewater Rafting</a>. <br class="visible-xs">All Rights Reserved.</p>
-                  </div>
-                 <div class="col-sm-3">
-                     <ul class="pull-right">
-                         <li><a aria-label="Follow Us on Facebook" target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x"></i></a></li>
-                         <li><a aria-label="Follow Us on X" target="_blank" href="https://twitter.com/#!/"><i class="fa fa-twitter fa-2x"></i></a></li>
-                         <li><a aria-label="Follow Us on Instagram" target="_blank" href="https://instagram.com//"><i class="fa fa-instagram fa-2x"></i></a></li>
-                         
-    
-                      </ul>
-                  </div>
-             </div>
-        </div>
-      </footer><!--/#footer-->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-          <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-     </html>
+
+</html>
