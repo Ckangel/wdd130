@@ -206,13 +206,12 @@ main {
     font-size: 1.2em;
 }
 
-.employee p {
+
+.services {
     margin-bottom: 5px;
     font-size: 0.9em;
     color: #666;
 }
-
-
 
 .trips-container {
     max-width: 1200px;
