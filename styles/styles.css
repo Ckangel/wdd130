@@ -1,0 +1,51 @@
+main {
+    max-width: 840px;
+    margin: 0 auto;  /* Center the main content horizontally */
+  }
+  
+  aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2); /* 1 */
+    padding: 1rem; 
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+  }
+  
+  aside img {
+    width: 200px;
+    height: auto;
+  }
+  
+  main img {
+    width: 150px;
+    height: auto;
+    float: left;  /* Make the profile image float to the left */
+    margin: 1rem 1rem 1rem 0;  /* Add margin to the profile image */
+  }
+  
+  p { padding: 0;}
+  
+  footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  nav {
+    background-color: darkblue;
+    padding: 10px;
+  }
+
+  nav a {
+    color: white;
+    display: block;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: darkblue;
+  }
+  
