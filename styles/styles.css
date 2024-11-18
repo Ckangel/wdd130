@@ -1,3 +1,18 @@
+nav {
+  background-color: darkblue;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  display: block;
+  padding: 20px;
+}
+
+h1 {
+  color: darkblue;
+}
+
 main {
     max-width: 840px;
     margin: 0 auto;  /* Center the main content horizontally */
@@ -31,21 +46,7 @@ main {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
-    padding: 1rem;
   }
 
-  nav {
-    background-color: darkblue;
-    padding: 10px;
-  }
-
-  nav a {
-    color: white;
-    display: block;
-    padding: 20px;
-  }
-  
-  h1 {
-    color: darkblue;
-  }
+ 
   
