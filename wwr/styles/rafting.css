@@ -46,7 +46,7 @@ nav {
 h1 {
     position: absolute;
     border-bottom: 2px solid #000;
-    color: #2a2d43;
+    color: #fff;
     padding: 6px;
     margin-bottom: 5px;
   }
@@ -65,6 +65,12 @@ nav a {
     height: auto;
 }
 
+.socialinks {
+    display: flex;
+    justify-content: center; /* Centers the elements horizontally */
+    gap: 10px; /* Adjust gap size for spacing between icons (optional) */
+  }
+  
   /* Footer styles */
 footer {
     background-color: var(--primary-color);
