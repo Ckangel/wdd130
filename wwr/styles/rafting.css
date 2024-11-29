@@ -1,0 +1,76 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Define CSS variables */
+:root {
+    --primary-color: #ffa9e7;
+    --secondary-color: #7F2CCB;
+    --text-color: #2a2d43;
+}
+
+/* Body styles */
+body {
+    font-family: 'Roboto', 'Montserrat';
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    background-color: #7f2ccb;
+}
+
+/* Header styles */
+header {
+    background-color: var(--primary-color);
+    padding: 12px;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #ff84e8;
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    border-bottom: 2px solid #000;
+    color: #2a2d43;
+    padding: 6px;
+    margin-bottom: 5px;
+  }
+
+nav a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+  }
+
+.adventures img {
+    width: 100%;
+    height: auto;
+}
+
+  /* Footer styles */
+footer {
+    background-color: var(--primary-color);
+    color: #2a2d43;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;   
+}
