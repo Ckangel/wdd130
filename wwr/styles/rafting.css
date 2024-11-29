@@ -1,11 +1,8 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 /* Define CSS variables */
 :root {
     --primary-color: #ffa9e7;
     --secondary-color: #7F2CCB;
-    --text-color: #2a2d43;
+    --text-color: #432a3b;
 }
 
 /* Body styles */
@@ -70,7 +67,7 @@ nav a {
     justify-content: center; /* Centers the elements horizontally */
     gap: 10px; /* Adjust gap size for spacing between icons (optional) */
   }
-  
+
   /* Footer styles */
 footer {
     background-color: var(--primary-color);
