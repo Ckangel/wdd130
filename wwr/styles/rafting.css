@@ -2,7 +2,7 @@
 :root {
     --primary-color: #ffa9e7;
     --secondary-color: #7F2CCB;
-    --text-color: #432a3b;
+    --text-color: #fff;
 }
 
 /* Body styles */
@@ -11,7 +11,7 @@ body {
     color: var(--text-color);
     margin: 0;
     padding: 0;
-    background-color: #7f2ccb;
+    background-color: #af7cdf;
 }
 
 /* Header styles */
@@ -61,6 +61,10 @@ nav a {
     width: 100%;
     height: auto;
 }
+
+.spaced-image {
+    margin: 10px;  /* Adjust margin values for desired spacing */
+  }
 
 .socialinks {
     display: flex;
