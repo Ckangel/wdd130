@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
 
 /* Define CSS variables */
 :root {
@@ -7,9 +7,16 @@
     --text-color: #fff;
 }
 
+@media screen and (max-width: 600px) {
+    :root {
+        --primary-color: #ff7f50; /* Example of changing the primary color */
+        --secondary-color: #32cd32; /* Change secondary color */
+        --text-color: #000; /* Change text color for smaller screens */
+}
+
 /* Body styles */
 body {
-    font-family: 'Roboto', 'Montserrat';
+    font-family: 'Roboto', 'Montserrat', sans-serif; /* Added sans-serif as fallback */
     color: var(--text-color);
     margin: 0;
     padding: 0;
@@ -30,17 +37,17 @@ header img {
 
 nav {
     display: flex;
-    justify-content: flex-end;
-    background-color: #ff84e8;
-    padding: 1rem;
     justify-content: space-evenly;
     align-items: center;
+    background-color: #ff84e8;
+    padding: 1rem;
 }
 
 /* Hover effect for nav links */
 nav a:hover {
-    text-shadow: 4px 4px 6px rgba(0. 0, 0, 0.7);
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
 }
+
 /* Hero section */
 .hero {
     position: relative;
@@ -54,9 +61,10 @@ nav a:hover {
     float: right;
 }
 
-'hero h1 {
+.hero h1 {
     position: absolute;
-    border-bottom: 2px solid #000;
+    width: 100%;
+    border-bottom: 1px solid #000;
     color: #fff;
     padding: 6px;
     margin-bottom: 5px;
@@ -66,12 +74,13 @@ nav a:hover {
 }
 
 .hero article {
-    position: absolute;
+    position: static;
     bottom: 20px;
     right: 20px;
-    background-color: rgba(0. 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 10px;
-    max-width: 300px;
+    width: 100%;
+    color: antiquewhite;
 }
 
 .hero article img {
@@ -97,7 +106,6 @@ nav a {
   }
 
   /* Adventures section */
-
   .gallery {
     display: flex;                   /* Use Flexbox for layout */
     justify-content: space-around;  /* Even spacing between items */
@@ -123,7 +131,7 @@ footer {
 
 footer p {
     margin: 0; /* Remove default margin */
-    text-align: left; /* Align text to the left */
+    text-align: center; /* Align text to the left */
 }
 
 .sociallinks {
