@@ -4,8 +4,8 @@
     --primary-color: #ffa9e7;
     --secondary-color: #7F2CCB;
     --text-color: #fff;
-}
-
+    --main-color: blue;
+  }
 /* Body styles */
 body {
     font-family: 'Roboto', 'Montserrat', sans-serif; /* Added sans-serif as fallback */
@@ -112,7 +112,24 @@ nav a {
 .gallery img {
     width: 200px;                   /* Set a fixed width for all images */
     height: auto;                   /* Maintain aspect ratio */
-   }
+}
+
+/* Archives section */
+.archives {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.archives h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    height: auto;
+}
 
 footer {
     display: flex;
@@ -129,4 +146,231 @@ footer p {
     display: flex;
     justify-content: right; /* Aligns icons to the right */
     gap: 1rem;
+}
+
+/* Contact section styles */
+.contact-section {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.contact-form,
+.contact-info {
+    flex: 1;
+    max-width: 45%;
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    height: 771px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Map iframe styles */
+.contact-info iframe {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    --primary-color: #ffa9e7;
+}
+
+/* Employee section styles */
+.employee {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.employee-details {
+    flex: 1;
+}
+
+.employee-info h2 {
+    margin-top: 0;
+}
+
+.employee-description p {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Styling the office_1 image */
+figure.our-office {
+    margin-top: 20px;
+}
+
+figure.our-office img {
+    max-width: 110%;
+    width: 450px;
+    height: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+/* Newsletter section */
+.newsletter {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter form {
+    display: inline-block;
+    text-align: left;
+}
+
+.newsletter form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.newsletter form input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 300px;
+}
+
+.newsletter form button {
+    padding: 10px 20px;
+}
+
+/* Contact Form Container */
+.contact-form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Headings */
+.contact-form h2 {
+    text-align: center;
+    color: #333;
+}
+
+.contact-form h3 {
+    margin-top: 20px;
+    color: #555;
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+/* Textarea Specific Styles */
+textarea {
+    resize: vertical; /* Allows vertical resizing only */
+}
+
+/* Radio Buttons */
+.radio-group {
+    margin-top: 10px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px; /* Space between radio button and label */
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+    margin-right: 5px; /* Space between checkbox and label */
+}
+
+/* Button Styles */
+button {
+    background-color: #5cb85c; /* Bootstrap success color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ff84e8; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .contact-form {
+        padding: 15px; /* Reduce padding on smaller screens */
+        max-width: 100%; /* Full width on small devices */
+    }
 }
