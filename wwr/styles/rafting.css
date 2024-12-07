@@ -1,40 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
 /* Define CSS variables */
-:root {
-    --primary-color: #ffa9e7;
-    --secondary-color: #7F2CCB;
-    --text-color: #fff;
-    --main-color: blue;
-  }
+
 /* Body styles */
-body {
+.active {
     font-family: 'Roboto', 'Montserrat', sans-serif; /* Added sans-serif as fallback */
-    color: var(--text-color);
+    color: linear gradient(135deg, #ff7eb3, #ff758c);
     margin: 0;
     padding: 0;
-    background-color: #af7cdf;
+    background-color: #7f2ccb;
 }
 
 /* Header styles */
 header {
-    background-color: var(--primary-color);
-    padding: 12px;
-    color: rgb(255, 255, 255);
-}
-
-header img {
-    width: 150px;
-    height: auto;
+    background-color: #414361; /* Background color for the header */
+    padding: 10px 20px; /* Padding around the header */
 }
 
 nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #ff84e8;
-    padding: 1rem;
+    display: flex; /* Enable Flexbox */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
 }
 
+nav img {
+    margin-right: auto; /* Pushes the logo to the left */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    margin-left: 20px; /* Space between links */
+    font-weight: bold; /* Make links bold */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+nav a:hover {
+    color: #ffa9e7; /* Change color on hover */
+}
+
+nav a.active {
+    border-bottom: 2px solid #ffa9e7; /* Underline for active link */
+}
 /* Hover effect for nav links */
 nav a:hover {
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
@@ -44,25 +54,41 @@ nav a:hover {
 .hero {
     position: relative;
     margin-bottom: 20px;
+    text-align: center;
+    padding: 1%;
 }
 
 .hero img {
-    display: block;
     width: 100%;
     height: auto;
-    float: right;
 }
 
 .hero h1 {
     position: absolute;
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
     width: 100%;
     border-bottom: 1px solid #000;
+    -webkit-text-stroke: 2px #00ffff;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 3px 3px 0 #ff00ff, 6px 6px 0 #00ffff, 9 9px 0 #ff00ff;
     color: #fff;
     padding: 6px;
     margin-bottom: 5px;
     text-align: center;
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: glowing 3s infinite alternate;
+}
+
+/* Glowing effect */
+@keyframes glowing {
+    0% {
+        text-shadow: 3px 3px5px #00ffff, 6px 6px 10px #ff00ff, 9px 9px 15px #00ffff;
+    }
+    100% {
+        text-shadow: 3px 3px 20px #00ffff, 6px 6px 25px #ff00ff, 9px 9px 30px #00ffff;
+    }
 }
 
 .hero article {
@@ -88,14 +114,9 @@ h1 {
     font-size: 3em;
 }
 
-nav a {
-    display: block;
-    padding: 0.5rem;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #fff;
-  }
+.active {
+    background-color:#7F2CCB /* Choose a color not the same as normal or hover.; */
+}
 
   /* Adventures section */
   .gallery {
@@ -119,6 +140,7 @@ nav a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    padding: 1%;
 }
 
 .archives h2 {
@@ -135,11 +157,18 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    background-color: #414361; /* Background color for the footer */
 }
 
 footer p {
     margin: 0; /* Remove default margin */
     text-align: center; /* Align text to the left */
+    text-decoration-color: #fff;
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
 }
 
 .sociallinks {
@@ -208,16 +237,16 @@ textarea {
 
 button[type="submit"] {
     background-color: var(--secondary-color);
-    color: white;
+    color: #7F2CCB;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    cursor: pointer;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
     transition: background-color 0.3s ease;
 }
 
 button[type="submit"]:hover {
-    --primary-color: #ffa9e7;
+    --primary-color: #fff;
 }
 
 /* Employee section styles */
@@ -288,6 +317,11 @@ figure.our-office img {
 .newsletter form button {
     padding: 10px 20px;
 }
+
+h2 {
+    text-align: center;
+}
+
 
 /* Contact Form Container */
 .contact-form {
@@ -367,10 +401,208 @@ button:hover {
     background-color: #ff84e8; /* Darker shade on hover */
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    .contact-form {
-        padding: 15px; /* Reduce padding on smaller screens */
-        max-width: 100%; /* Full width on small devices */
-    }
+/* Home page Styling */
+.grid-layout {
+    display: flex; /* Enable grid layout */
+    /* grid-template-columns: repeat(2, 1fr Responsive columns */
+    justify-content: space-between;
+    /* gap: 20px; Space between grid items */
+    justify-items: center; /* Center items horizontally */
+    max-width: 1200px; /* Optional: Set a max width for the container */
+    margin: 0 auto; /* Center the entire grid container */
+    /* Optional: Add padding around the container - padding: 20px; */
+}
+
+.grid-item {
+    text-align: center; /* Center text within each grid item */
+}
+
+.grid-item img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners to images */
+}
+
+/* Newsletter section */
+.newsletter {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter form {
+    display: inline-block;
+    text-align: left;
+}
+
+.newsletter form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.newsletter form input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 300px;
+}
+
+.newsletter form button {
+    padding: 10px 20px;
+}
+
+/* picture frame for photos */
+.employee img {
+    padding: 20px;
+    border: 10px solid #14cee3; /* Default frame color */
+    box-shadow: 0 8px 12px rgba(14, 13, 13, 0.2);
+}
+
+    .framed-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+} 
+
+/* Contact form button hover effect */
+.contact-form button:hover,
+.cta-button:hover {
+    background-color: var(--secondary-color); /* Change button background color on hover */
+    color: #fff;                            /* Change button text color to white */
+    cursor: pointer;                         /* Change cursor to pointer */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow effect */
+}
+
+.banner {
+    background: linear-gradient(135deg, #7F2CCB, #ff758c);
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .banner h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  .banner-cta {
+    background-color: #fff;
+    color: #7F2CCB;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .banner-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+
+/* Trip page section styles */
+.cta-button {
+    text-align: center;
+    background-color: linear-gradient(135deg, #ff7eb3, #ff758c);
+    color: steelblue;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    float: right;
+}
+
+.cta {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.trip-descriptions {
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+    column-gap: 20px; /* Space between grid items */
+    justify-items: center; /* Center items horizontally */
+    max-width: 1200px; /* Optional: Set a max width for the container */
+    margin: 0 auto; /* Center the entire grid container */
+}
+
+.trip {
+    text-align: center; /* Center text within each trip */
+}
+
+.trip img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    padding: 20px;
+}
+
+.trip h2 {
+    color: var(--secondary-color);
+    margin: 15px 0 10px;
+    text-align: center;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Set a clean font */
+    background-color: #f4f4f4; /* Light background for contrast */
+    margin: 0;
+    padding: 20px; /* Add some padding around the page */
+}
+
+/* Centering the trip table section */
+.trip-table {
+    max-width: 800px; /* Limit the width of the table */
+    margin: 0 auto; /* Center the section horizontally */
+    background-color: #ffffff; /* White background for the table */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Padding inside the section */
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Remove space between cells */
+}
+
+th, td {
+    padding: 12px; /* Padding inside cells for better spacing */
+    text-align: left; /* Align text to the left */
+}
+
+th {
+    background-color: #007BFF; /* Header background color */
+    color: white; /* Header text color */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Zebra striping for rows */
+}
+
+tr:hover {
+    background-color: #e9ecef; /* Highlight row on hover */
+}
+
+/* Heading Styles */
+h2 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Darker color for readability */
+}
+
+.trip img {
+    width: auto;
+    height: 120px;
 }
