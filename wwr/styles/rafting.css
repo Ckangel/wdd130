@@ -4,7 +4,7 @@
 /* Body styles */
 :root {
     font-family: 'Roboto', 'Montserrat', sans-serif; /* Added sans-serif as fallback */
-    color: linear gradient(135deg, #ff7eb3, #ff758c);
+    background: linear gradient(135deg, #ff7eb3, #ff758c);
     margin: 0;
     padding: 0;
     background-color: #7f2ccb;
