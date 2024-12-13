@@ -34,7 +34,7 @@ header {
 header img {
     width: 150px;
     height: auto;
-    margin-left: 50px;
+    margin-left: auto;
 }
 
 nav {
@@ -84,11 +84,24 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    margin: 0;
+    margin: 1rem;
     font-size: 3em;
-    color: rgb(12, 31, 239);
+    color: #FFEA00;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+.hero h2 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0;
+    font-size: 3em;
+    color: #0c0b01;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 h1 {
     text-align: center;
     margin: 0;
@@ -345,13 +358,34 @@ figure.our-office img {
     margin-bottom: 20px;
 }
 
+
+.cta-banner {
+    width: 100px; /* Set width of the circular banner */
+    height: 100px; /* Set height equal to width for a perfect circle */
+    background-color: #4CAF50; /* Background color */
+    border-radius: 50%; /* Makes the div circular */
+    display: flex; /* Use flexbox for centering content */
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    margin: 20px auto; /* Center the banner on the page */
+} 
+
+
 .cta-button {
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
+    background-color: #f44336; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners for button */
+    text-decoration: none; /* Remove underline from link */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.cta-button:hover {
+    background-color: #d32f2f; /* Darker shade on hover */
 }
 
 .trip-descriptions {
@@ -362,7 +396,7 @@ figure.our-office img {
 
 .trip {
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
