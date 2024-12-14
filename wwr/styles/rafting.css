@@ -350,7 +350,6 @@ figure.our-office img {
     margin-left: -10px;
 }
 
-
 /* Contact form button hover effect */
 .contact-form button:hover,
 .cta-button:hover {
@@ -369,7 +368,6 @@ figure.our-office img {
     margin-bottom: 20px;
 }
 
-
 .cta-banner {
     width: 100px; /* Set width of the circular banner */
     height: 100px; /* Set height equal to width for a perfect circle */
@@ -385,10 +383,9 @@ figure.our-office img {
     margin: 20px auto; /* Center the banner on the page */
 } 
 
-
 .cta-button {
-    background-color: #f44336; /* Button background color */
-    color: white; /* Button text color */
+    background-color: #064e5e; /* Button background color */
+    color: #fff; /* Button text color */
     padding: 10px 20px; /* Button padding */
     border-radius: 5px; /* Rounded corners for button */
     text-decoration: none; /* Remove underline from link */
