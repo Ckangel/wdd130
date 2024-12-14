@@ -12,17 +12,28 @@
     --paragraph-background-color: var(--primary-color);
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 /* Body styles */
 body {
     background-color: #f4f4f4;
 }
 
+header, main, footer {
+    max-width: 1200px;  
+    margin: 0 auto;
+}
 
 /* Header styles */
 header {
     background-color: var(--primary-color);
     color: rgb(255, 255, 255);
     padding: 12px;
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;  /* or you do the align-self on the nav rule */
 }
 
 .header-container {
@@ -40,7 +51,9 @@ header img {
 nav {
     display: flex;
     justify-content: flex-end;
+    align-self: end;
 }
+
 
 nav a {
     color: rgb(8, 7, 7);
@@ -56,16 +69,14 @@ nav a:hover {
 }
 
 nav a.active {
-    border-bottom : 2px solid #ffa9e7;
-}
-    
-/* Main styles */
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    border-bottom: 2px solid #ffa9e7;
+} 
+
+.active {
+    border-bottom: 2px solid #ffa9e7;
 }
 
+/* Main styles */
 /* Hero section */
 .hero {
     position: relative;
